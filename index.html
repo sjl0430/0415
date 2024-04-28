@@ -1,1 +1,8 @@
-# Hello
+# useState
+- Set 함수는 다음 렌더링에 대한 상태 변수만 업데이트함
+- Set 함수를 호출한 후 상태 변수를 읽으면 호출하기 전 화면에 있었던 이전 값을 계속 얻을 수 있음.
+- 최적화: 제공한 새 값이 현재 state 값과 동일하면 Object.isReact는 구성요소와 해당 하위 항목을 다시 렌더링하는 것을 건너뛴다.
+- React 상태 업데이트를 일괄 처리한다. -> 단일 이벤트 중 여러 번 렌더딩되는 것을 방지
+- array destructuring을 사용하여 useState는 두 개의 항목이 포함된 배열을 반환한다.
+  예) const [count, setCount] = useState(0);
+- React는 초기 상태를 한 번 저장하고 다음 렌더링에서 무시한다.
